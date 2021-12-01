@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FlightInfoConnectionTableViewCell" customModule="LastminClub" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="122"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="122"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUh-2a-U1N">
+                        <rect key="frame" x="91" y="12" width="213" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="Rxp-Nt-2ym"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="17"/>
+                        <color key="textColor" name="black_000000"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xf-k7-SUc">
+                        <rect key="frame" x="91" y="41" width="213" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="TZu-Fv-I0z"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="13"/>
+                        <color key="textColor" name="black_000000"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bxX-iW-sJQ" userLabel="sepView">
+                        <rect key="frame" x="0.0" y="121" width="320" height="1"/>
+                        <color key="backgroundColor" name="sep1_B9B9BB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="817-TB-Vg1"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymw-3K-3VT">
+                        <rect key="frame" x="91" y="69" width="213" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="Kp6-AI-Fcr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="13"/>
+                        <color key="textColor" name="black_000000"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="8xf-k7-SUc" secondAttribute="trailing" constant="16" id="3Dj-au-1eb"/>
+                    <constraint firstItem="8xf-k7-SUc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="91" id="6Tj-nv-Vhc"/>
+                    <constraint firstAttribute="bottom" secondItem="bxX-iW-sJQ" secondAttribute="bottom" id="6zp-Jn-glY"/>
+                    <constraint firstItem="Ymw-3K-3VT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="91" id="Ak0-DC-EOm"/>
+                    <constraint firstItem="bxX-iW-sJQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="121" id="Khu-hp-St1"/>
+                    <constraint firstItem="vUh-2a-U1N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="91" id="TZl-JH-dcV"/>
+                    <constraint firstItem="Ymw-3K-3VT" firstAttribute="top" secondItem="8xf-k7-SUc" secondAttribute="bottom" constant="10" id="WMw-es-6R3"/>
+                    <constraint firstAttribute="trailing" secondItem="Ymw-3K-3VT" secondAttribute="trailing" constant="16" id="XgS-aG-twY"/>
+                    <constraint firstItem="8xf-k7-SUc" firstAttribute="top" secondItem="vUh-2a-U1N" secondAttribute="bottom" constant="7" id="a6d-SR-Ooi"/>
+                    <constraint firstItem="bxX-iW-sJQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kWH-6d-ggx"/>
+                    <constraint firstItem="bxX-iW-sJQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Ymw-3K-3VT" secondAttribute="bottom" constant="16" id="o0B-Ak-x6N"/>
+                    <constraint firstItem="vUh-2a-U1N" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="o48-n1-MdN"/>
+                    <constraint firstAttribute="trailing" secondItem="vUh-2a-U1N" secondAttribute="trailing" constant="16" id="paE-C1-fdJ"/>
+                    <constraint firstAttribute="trailing" secondItem="bxX-iW-sJQ" secondAttribute="trailing" id="zPI-1v-cdZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="baggageLabel" destination="8xf-k7-SUc" id="yFn-AY-dz9"/>
+                <outlet property="timeLabel" destination="vUh-2a-U1N" id="gu6-f4-YtC"/>
+                <outlet property="transferLabel" destination="Ymw-3K-3VT" id="3lN-MG-Qo4"/>
+            </connections>
+            <point key="canvasLocation" x="125" y="72"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="black_000000">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="sep1_B9B9BB">
+            <color red="0.72549019607843135" green="0.72549019607843135" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

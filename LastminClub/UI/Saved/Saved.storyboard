@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lza-Tf-lSL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Saved-->
+        <scene sceneID="fBl-dz-5vq">
+            <objects>
+                <navigationController storyboardIdentifier="navFavoriteHotelListVC" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Lza-Tf-lSL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Saved" image="tabBar_favorite" id="wwa-JZ-L6L"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DtM-4R-Giw">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eYK-zH-dSj" kind="relationship" relationship="rootViewController" id="p0r-cj-rcY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bjr-h3-zG4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-219" y="138"/>
+        </scene>
+        <!--Favorite Hotel List View Controller-->
+        <scene sceneID="dL3-w0-hK5">
+            <objects>
+                <viewController storyboardIdentifier="FavoriteHotelListVC" id="eYK-zH-dSj" customClass="FavoriteHotelListViewController" customModule="LastminClub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="clS-Xf-3m9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kb6-Rs-DTA" userLabel="bgTopView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="backgroundColor" name="bg1_F7F7F8"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ytw-19-s72" userLabel="topView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saved" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ChE-Zk-vZw">
+                                        <rect key="frame" x="183" y="12" width="48" height="20"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="17"/>
+                                        <color key="textColor" name="black_000000"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJZ-gF-7mc" userLabel="sepView">
+                                        <rect key="frame" x="0.0" y="43" width="414" height="1"/>
+                                        <color key="backgroundColor" name="sep1_B9B9BB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="fFS-2i-eLY"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="bg1_F7F7F8"/>
+                                <constraints>
+                                    <constraint firstItem="uJZ-gF-7mc" firstAttribute="leading" secondItem="ytw-19-s72" secondAttribute="leading" id="26b-Tq-Mjf"/>
+                                    <constraint firstAttribute="trailing" secondItem="uJZ-gF-7mc" secondAttribute="trailing" id="3Ym-Um-ScT"/>
+                                    <constraint firstAttribute="bottom" secondItem="uJZ-gF-7mc" secondAttribute="bottom" id="TiP-id-iNp"/>
+                                    <constraint firstAttribute="height" constant="44" id="VUT-H8-qiV"/>
+                                    <constraint firstItem="ChE-Zk-vZw" firstAttribute="centerX" secondItem="ytw-19-s72" secondAttribute="centerX" id="ddr-Xd-Ok8"/>
+                                    <constraint firstItem="ChE-Zk-vZw" firstAttribute="centerY" secondItem="ytw-19-s72" secondAttribute="centerY" id="x2U-16-o8R"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fwv-Hb-IKc">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dBF-Ax-bcY"/>
+                        <color key="backgroundColor" name="bg0_E9E9EE"/>
+                        <constraints>
+                            <constraint firstItem="kb6-Rs-DTA" firstAttribute="leading" secondItem="dBF-Ax-bcY" secondAttribute="leading" id="3lL-Nt-g6d"/>
+                            <constraint firstItem="kb6-Rs-DTA" firstAttribute="top" secondItem="clS-Xf-3m9" secondAttribute="top" id="6aP-4N-3wJ"/>
+                            <constraint firstItem="kb6-Rs-DTA" firstAttribute="trailing" secondItem="dBF-Ax-bcY" secondAttribute="trailing" id="6sV-aR-8Pg"/>
+                            <constraint firstItem="fwv-Hb-IKc" firstAttribute="trailing" secondItem="dBF-Ax-bcY" secondAttribute="trailing" id="ML3-jI-3jf"/>
+                            <constraint firstItem="fwv-Hb-IKc" firstAttribute="top" secondItem="ytw-19-s72" secondAttribute="bottom" id="RWL-2b-SZ2"/>
+                            <constraint firstItem="ytw-19-s72" firstAttribute="leading" secondItem="dBF-Ax-bcY" secondAttribute="leading" id="SRR-Lc-YEJ"/>
+                            <constraint firstItem="ytw-19-s72" firstAttribute="top" secondItem="kb6-Rs-DTA" secondAttribute="bottom" id="ZAT-D0-sQj"/>
+                            <constraint firstItem="ytw-19-s72" firstAttribute="trailing" secondItem="dBF-Ax-bcY" secondAttribute="trailing" id="ZPg-wc-JnZ"/>
+                            <constraint firstItem="fwv-Hb-IKc" firstAttribute="leading" secondItem="dBF-Ax-bcY" secondAttribute="leading" id="lU9-og-CQC"/>
+                            <constraint firstAttribute="bottom" secondItem="fwv-Hb-IKc" secondAttribute="bottom" id="tk0-K6-Xxt"/>
+                            <constraint firstItem="ytw-19-s72" firstAttribute="top" secondItem="dBF-Ax-bcY" secondAttribute="top" id="z54-Op-ahN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="beV-vp-FVq"/>
+                    <connections>
+                        <outlet property="tableView" destination="fwv-Hb-IKc" id="EhD-7a-wPg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="91U-SQ-Tb9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="499" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabBar_favorite" width="48" height="25"/>
+        <namedColor name="bg0_E9E9EE">
+            <color red="0.9137254901960784" green="0.9137254901960784" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="bg1_F7F7F8">
+            <color red="0.96862745098039216" green="0.96862745098039216" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="black_000000">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="sep1_B9B9BB">
+            <color red="0.72549019607843135" green="0.72549019607843135" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

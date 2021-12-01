@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeVC" modalTransitionStyle="crossDissolve" id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="LastminClub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgWelcome" translatesAutoresizingMaskIntoConstraints="NO" id="ZBv-C8-G7L">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_LastminClub" translatesAutoresizingMaskIntoConstraints="NO" id="EAF-sn-QfW">
+                                <rect key="frame" x="95" y="296" width="224" height="224"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="224" id="Bjq-c7-mvf"/>
+                                    <constraint firstAttribute="height" constant="224" id="uYa-I1-sLB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="green_009d97"/>
+                        <constraints>
+                            <constraint firstItem="ZBv-C8-G7L" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3bt-3C-7kG"/>
+                            <constraint firstItem="EAF-sn-QfW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BeV-GH-Psw"/>
+                            <constraint firstAttribute="trailing" secondItem="ZBv-C8-G7L" secondAttribute="trailing" id="IQz-Wz-hLG"/>
+                            <constraint firstItem="ZBv-C8-G7L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="amY-dc-u2K"/>
+                            <constraint firstItem="EAF-sn-QfW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-40" id="iag-Ah-QvO"/>
+                            <constraint firstAttribute="bottom" secondItem="ZBv-C8-G7L" secondAttribute="bottom" id="xTZ-JG-Syg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="101.78571428571428"/>
+        </scene>
+        <!--Tab Bar Controller app-->
+        <scene sceneID="5iz-9o-qWv">
+            <objects>
+                <tabBarController storyboardIdentifier="tabBar" modalTransitionStyle="crossDissolve" id="hWA-kw-YI5" customClass="UITabBarController_app" customModule="LastminClub" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aNj-Vu-Xqe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="green_009d97"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2pL-Pl-MvP" kind="relationship" relationship="viewControllers" id="gll-gY-xS8"/>
+                        <segue destination="xQm-fT-I2W" kind="relationship" relationship="viewControllers" id="MRh-Nd-D84"/>
+                        <segue destination="LYQ-C4-ldG" kind="relationship" relationship="viewControllers" id="16a-cc-Owm"/>
+                        <segue destination="0Dy-w2-Jxl" kind="relationship" relationship="viewControllers" id="rgL-cL-bfL"/>
+                        <segue destination="dyw-xL-nhr" kind="relationship" relationship="viewControllers" id="pWF-hd-TkX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eAZ-FE-S1b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941" y="103"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="2Zd-Zj-SFH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="2pL-Pl-MvP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="hYb-Fh-4ku"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="scL-te-qCg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="679" y="520"/>
+        </scene>
+        <!--Flight-->
+        <scene sceneID="rJx-9z-Uoi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Flight" id="xQm-fT-I2W" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="VuH-6Z-rQS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CWK-xp-gAP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="815" y="520"/>
+        </scene>
+        <!--Saved-->
+        <scene sceneID="Qhk-Ts-tkI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Saved" id="0Dy-w2-Jxl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="oNg-Fw-UIn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="egS-AH-xjg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1091" y="520"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="RZR-Tp-eVM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="dyw-xL-nhr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="M77-rZ-yKH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="510-Qw-4pn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1226" y="520"/>
+        </scene>
+        <!--Hotel-->
+        <scene sceneID="PF9-XJ-lWO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Hotel" id="LYQ-C4-ldG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Izb-4F-L0q"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OBi-j2-t7c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941" y="520"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bgWelcome" width="313" height="445"/>
+        <image name="logo_LastminClub" width="330" height="330"/>
+        <namedColor name="green_009d97">
+            <color red="0.0" green="0.61568627450980395" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

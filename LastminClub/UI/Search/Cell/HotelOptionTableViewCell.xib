@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HotelOptionTableViewCell" customModule="LastminClub" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select" translatesAutoresizingMaskIntoConstraints="NO" id="Ena-92-2LW">
+                        <rect key="frame" x="280" y="8" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="Vib-IY-6ra"/>
+                            <constraint firstAttribute="width" constant="24" id="d4w-TL-7aB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DrF-2d-gCo">
+                        <rect key="frame" x="225" y="9" width="42" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="orc-mi-ptH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="17"/>
+                        <color key="textColor" name="magenta_df248d"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="rl5-5n-rcW">
+                        <rect key="frame" x="16" y="9" width="42" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="fKC-ww-WSw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="17"/>
+                        <color key="textColor" name="black_000000"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdO-Qu-P4H" userLabel="sepView">
+                        <rect key="frame" x="16" y="39" width="304" height="1"/>
+                        <color key="backgroundColor" name="sep1_B9B9BB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Zmd-PH-4GR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DrF-2d-gCo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2VA-8k-9GL"/>
+                    <constraint firstAttribute="bottom" secondItem="zdO-Qu-P4H" secondAttribute="bottom" id="7a6-18-tlB"/>
+                    <constraint firstItem="rl5-5n-rcW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="BGX-eB-Qjd"/>
+                    <constraint firstItem="Ena-92-2LW" firstAttribute="leading" secondItem="DrF-2d-gCo" secondAttribute="trailing" constant="13" id="Kko-nH-JOT"/>
+                    <constraint firstItem="Ena-92-2LW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Neb-2k-T1H"/>
+                    <constraint firstAttribute="bottom" secondItem="Ena-92-2LW" secondAttribute="bottom" constant="8" id="Ou7-JJ-nLv"/>
+                    <constraint firstItem="zdO-Qu-P4H" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="eLj-VD-D6e"/>
+                    <constraint firstAttribute="trailing" secondItem="Ena-92-2LW" secondAttribute="trailing" constant="16" id="gZq-2j-2L8"/>
+                    <constraint firstItem="rl5-5n-rcW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="vGE-HU-9mu"/>
+                    <constraint firstAttribute="trailing" secondItem="zdO-Qu-P4H" secondAttribute="trailing" id="yrJ-fZ-VzN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="isSelectImageView" destination="Ena-92-2LW" id="LRH-ce-Gzp"/>
+                <outlet property="nameLabel" destination="rl5-5n-rcW" id="RKM-vd-hz4"/>
+                <outlet property="priceLabel" destination="DrF-2d-gCo" id="AMB-ZS-2f4"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="92.410714285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="select" width="15" height="15"/>
+        <namedColor name="black_000000">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="magenta_df248d">
+            <color red="0.87450980392156863" green="0.14117647058823529" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="sep1_B9B9BB">
+            <color red="0.72549019607843135" green="0.72549019607843135" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,46 @@
+ green_ 009d97
+
+class ShablonViewController: UIViewController {
+    // MARK: - IBOutlet
+    //@IBOutlet weak var phoneView: UIView!
+    //@IBOutlet weak var leadingRegViewConstraint: NSLayoutConstraint!
+    //@IBOutlet var actionButtonList: [UIButton]!
+    // MARK: - IBAction
+    //@IBAction func backButtonPressed(_ sender: UIButton) { popVC() }
+    // MARK: - Variables
+    
+    // MARK: - LifeCycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupUI()
+    }
+    
+    // MARK: - setupFormData
+    private func setupFormData() {
+        //fetchData()
+        //load_newTokenList()
+    }
+    
+    // MARK: - Actions
+
+    // MARK: - SetupUI
+    private func setupUI() {
+    }
+
+    // MARK: - Navigation
+    private func goToVC() {
+        //let vc: PswViewController = UIStoryboard.controller(.auth)
+        //vc.email = Validator().email_clear(emailTextField.text)
+        //self.pushVC(vc)
+    }
+}
+
+==========
+API.sendCodePhone(phoneC) { [weak self] (result) in
+    guard let sSelf = self else { return }
+    sSelf.hudHide()
+    switch result {
+    case .failure(let error): error.run(sSelf)
+    case .success(let nonce): ()
+    }
+}

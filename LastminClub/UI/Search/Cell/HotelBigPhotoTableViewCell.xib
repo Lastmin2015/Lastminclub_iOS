@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+        <array key="SFProDisplay-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HotelBigPhotoTableViewCell" customModule="LastminClub" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="275"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="275"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o7Q-9O-h6h">
+                        <rect key="frame" x="0.0" y="0.0" width="322" height="190.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="o7Q-9O-h6h" secondAttribute="height" multiplier="375:222" id="SD9-4M-noA"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yD7-cP-7BD">
+                        <rect key="frame" x="16" y="243" width="290" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="OJV-0n-fFl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                        <color key="textColor" name="black_000000"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart0" translatesAutoresizingMaskIntoConstraints="NO" id="fwT-ZT-yd4">
+                        <rect key="frame" x="275" y="16" width="31" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="1Rl-jb-U6g"/>
+                            <constraint firstAttribute="width" constant="31" id="twW-Xg-p8a"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyj-FB-OCn">
+                        <rect key="frame" x="264" y="202.5" width="42" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="pkW-j3-o9u"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="17"/>
+                        <color key="textColor" name="magenta_df248d"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lad-5K-euT">
+                        <rect key="frame" x="16" y="202.5" width="42" height="20"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="17"/>
+                        <color key="textColor" name="black_000000"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yD7-cP-7BD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="9iB-s2-7dJ"/>
+                    <constraint firstItem="Lad-5K-euT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="IU4-yU-JhD"/>
+                    <constraint firstItem="yD7-cP-7BD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Lad-5K-euT" secondAttribute="bottom" constant="4" id="MRE-wW-6LU"/>
+                    <constraint firstItem="kyj-FB-OCn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Lad-5K-euT" secondAttribute="trailing" constant="4" id="MyQ-ls-nql"/>
+                    <constraint firstAttribute="trailing" secondItem="kyj-FB-OCn" secondAttribute="trailing" constant="16" id="NEH-i5-4M8"/>
+                    <constraint firstItem="fwT-ZT-yd4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="PAH-XE-fgc"/>
+                    <constraint firstItem="o7Q-9O-h6h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bFh-3X-NuS"/>
+                    <constraint firstAttribute="bottom" secondItem="yD7-cP-7BD" secondAttribute="bottom" constant="16" id="iSK-u3-UlC"/>
+                    <constraint firstAttribute="trailing" secondItem="fwT-ZT-yd4" secondAttribute="trailing" constant="16" id="iwV-aF-Ug4"/>
+                    <constraint firstItem="kyj-FB-OCn" firstAttribute="top" secondItem="o7Q-9O-h6h" secondAttribute="bottom" constant="12" id="miE-lQ-eDB"/>
+                    <constraint firstAttribute="trailing" secondItem="yD7-cP-7BD" secondAttribute="trailing" constant="16" id="nEb-St-3DC"/>
+                    <constraint firstAttribute="trailing" secondItem="o7Q-9O-h6h" secondAttribute="trailing" id="nNq-4n-zFF"/>
+                    <constraint firstItem="o7Q-9O-h6h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tnl-oy-i9j"/>
+                    <constraint firstItem="Lad-5K-euT" firstAttribute="top" secondItem="o7Q-9O-h6h" secondAttribute="bottom" constant="12" id="yN5-IJ-NLq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="white_FFFFFF"/>
+            <connections>
+                <outlet property="favoriteImageView" destination="fwT-ZT-yd4" id="xEv-Er-dKe"/>
+                <outlet property="locationLabel" destination="yD7-cP-7BD" id="0iA-cm-D5O"/>
+                <outlet property="nameLabel" destination="Lad-5K-euT" id="GJx-Zm-Cwg"/>
+                <outlet property="photoImageView" destination="o7Q-9O-h6h" id="X40-kx-DY5"/>
+                <outlet property="priceLabel" destination="kyj-FB-OCn" id="CAd-mZ-hG9"/>
+            </connections>
+            <point key="canvasLocation" x="139.13043478260872" y="82.03125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart0" width="11.5" height="10"/>
+        <namedColor name="black_000000">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="magenta_df248d">
+            <color red="0.87450980392156863" green="0.14117647058823529" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white_FFFFFF">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
